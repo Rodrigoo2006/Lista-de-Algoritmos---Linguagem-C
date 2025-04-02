@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    
+    float a,b;
+    
+    printf ("Digite o primeiro numero:");
+    scanf ("%f", &a);
+    
+    printf ("Digite o segundo numero:");
+    scanf ("%f", &b);
+    
+    printf ("Soma do 1numero do quadrado: %.2f \n",a*a);
+    printf ("Soma do 2numero do quadrado: %.2f \n",b*b);
+    return 0;
+}
