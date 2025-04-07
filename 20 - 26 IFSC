@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    
+float salario,ps,salarioliquido;
+float desconto1,desconto2;
+    
+desconto1 = 10.0;
+desconto2 = 5.0;
+    
+printf("Digite o seu salario:");
+scanf ("%f", &salario);
+    
+ps = salario * (1 - desconto1 /100);
+salarioliquido = ps * (1 - desconto2 /100);
+
+printf ("Seu salario liquido e: %.2f",salarioliquido);
+
+return 0;
+}
