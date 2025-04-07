@@ -2,19 +2,17 @@
 
 int main() {
     
-float salario,ps,salarioliquido;
-float desconto1,desconto2;
-    
-desconto1 = 10.0;
-desconto2 = 5.0;
-    
-printf("Digite o seu salario:");
-scanf ("%f", &salario);
-    
-ps = salario * (1 - desconto1 /100);
-salarioliquido = ps * (1 - desconto2 /100);
+    float salarioBruto, salarioAposPrevidencia, salarioLiquido;
+    float descontoPrevidencia = 10.0;
+    float descontoImposto = 5.0;
 
-printf ("Seu salario liquido e: %.2f",salarioliquido);
+    printf("Digite o seu salario bruto: ");
+    scanf("%f", &salarioBruto);
 
-return 0;
+    salarioAposPrevidencia = salarioBruto * (1 - descontoPrevidencia / 100);
+    salarioLiquido = salarioAposPrevidencia * (1 - descontoImposto / 100);
+
+    printf("Seu salario liquido e: %.2f\n", salarioLiquido);
+
+    return 0;
 }
