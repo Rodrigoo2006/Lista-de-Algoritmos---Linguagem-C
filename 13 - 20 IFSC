@@ -1,15 +1,19 @@
+//20. Faça um algoritmo que leia dois valores inteiros (A e B) e apresente o resultado do quadrado da soma dos valores lidos.
+
 #include <stdio.h>
 
 int main() {
     
-    float a,b;
+    int a,b,resultado;
     
-    printf ("Digite o primeiro numero:");
-    scanf ("%f", &a);
+    printf("Digite o primeiro numero:");
+    scanf("%d", &a);
     
-    printf ("Digite o segundo numero:");
-    scanf ("%f", &b);
+    printf("Digite o segundo numero:");
+    scanf("%d", &b);
     
-    printf ("Soma do quadrado: %.2f \n", (a*a)+(b*b));
+    resultado = (a + b) * (a + b);
+    printf("Quadrado da soma: %d\n", resultado);
+
     return 0;
 }
