@@ -16,4 +16,6 @@ dv = 30 * (mes-1) +dias;
 
 printf ("VIVEU: %d",dv);
 
+return 0;
+
 }
