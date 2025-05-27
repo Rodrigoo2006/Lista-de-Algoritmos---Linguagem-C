@@ -4,9 +4,9 @@
 
 int main () {
 
-int soma,i;
+int soma=0,i=0;
 
-for (int i=0;i<=100;i++) {
+for (int i=0;i<100;i++) {
 printf ("%d\n",i);
 soma +=i;
 }
