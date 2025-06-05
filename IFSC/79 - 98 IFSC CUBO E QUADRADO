@@ -1,35 +1,28 @@
-98. Escreva um algoritmo que calcule os quadrados e cubos dos números de 0 a 10 
-
-e imprima os valores resultantes no formato de tabela, como segue: 
-
-Número Quadrado Cubo 
-0 0 0 
-1 1 1 
-2 4 8 
-3 9 27 
-4 16 64 
-5 25 125 
-6 36 216 
-7 49 343 
-8 64 512 
-9 81 729 
-10 100 1000
-Faça um algoritmo que calcule a média de salários de
-
-
+//100. Crie um programa que peça 10 números inteiros e apresente: a média, o maior 
+//e o menor.
 #include <stdio.h>
 
 int main () {
-    int num;
-    
-    printf ("DIGITE UM NÚMERO DE 0 A 10:");
-    scanf ("%d",&num);
-    
-    if (num>10) {
-        return 1;
+    int maior=0,menor,num,soma=0;
+    int q,media;
+    for (int i=0;i<=9;i++) {
+        printf ("DIGITE UM NÚMERO:");
+        scanf ("%d",&num);
+        q++;
+        soma+=num;
+        
+        if (i==0) {
+            menor = num;
+        }
+        else if (num<menor) {
+            menor =num;
+        }
+        
+        if (num>maior) {
+            maior = num;
+        }
     }
-    
-    printf ("Cubo:%d\n",num*num*num);
-    printf ("Quadrado:%d\n",num*num);
-
+    printf ("Menor:%d\n",menor);
+    printf ("Maior:%d\n",maior);
+    printf ("Média:%d\n",soma/q);
 }
